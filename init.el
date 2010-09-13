@@ -66,10 +66,10 @@
             (hs-minor-mode t)))         ; Hide and show blocks
 
 ; see http://www.busydoingnothing.co.uk/twitter-el/ for details
-(autoload 'twitter-get-friends-timeline "twitter" nil t)
-(autoload 'twitter-status-edit "twitter" nil t)
-(global-set-key "\C-xt" 'twitter-get-friends-timeline)
-(add-hook 'twitter-status-edit-mode-hook 'longlines-mode)
+; (autoload 'twitter-get-friends-timeline "twitter" nil t)
+; (autoload 'twitter-status-edit "twitter" nil t)
+; (global-set-key "\C-xt" 'twitter-get-friends-timeline)
+; (add-hook 'twitter-status-edit-mode-hook 'longlines-mode)
 
 ;;;;; end Vendor libs
 
@@ -82,6 +82,23 @@
 (require 'override-aquamacs-to-be-more-emacsy)
 (require 'prefer-utf)
 (require 'useful-functions)
+(require 'erlang-mode-stuff)
+
+;; Window switching. (C-x o goes to the next window)
+(windmove-default-keybindings) ;; Shift+direction
+(global-set-key (kbd "C-x O") (lambda () (interactive) (other-window -1))) ;; back one
+(global-set-key (kbd "C-x C-o") (lambda () (interactive) (other-window 2))) ;; forward two
+
+;; Hide scrollbars
+(scroll-bar-mode -1)
+
+(setq visible-bell t
+      font-lock-maximum-decoration t
+      whitespace-style '(trailing lines space-before-tab
+                                  indentation space-after-tab))
+
+(global-whitespace-mode t)
+
 
 ;;;;; end Aquamacs Emacs Starter Kit specific customizations
 
