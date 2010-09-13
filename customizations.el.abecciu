@@ -1,0 +1,21 @@
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(aquamacs-additional-fontsets nil t)
+ '(aquamacs-customization-version-id 210 t)
+ '(aquamacs-tool-bar-user-customization nil t)
+ '(default-frame-alist (quote ((menu-bar-lines . 1) (background-color . "black") (foreground-color . "green") (tool-bar-lines . 0) (vertical-scroll-bars))))
+ '(global-hl-line-mode t)
+ '(ns-tool-bar-display-mode nil t)
+ '(ns-tool-bar-size-mode nil t)
+ '(scroll-bar-mode nil)
+ '(tabbar-mode nil nil (tabbar))
+ '(visual-line-mode nil t))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
