@@ -99,6 +99,8 @@
 
 (global-whitespace-mode t)
 
+;; Start emacs server
+(server-start)
 
 ;;;;; end Aquamacs Emacs Starter Kit specific customizations
 
