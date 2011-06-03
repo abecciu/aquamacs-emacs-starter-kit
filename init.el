@@ -83,6 +83,7 @@
 (require 'prefer-utf)
 (require 'useful-functions)
 (require 'erlang-mode-stuff)
+(require 'coffee-mode-stuff)
 
 ;; Window switching. (C-x o goes to the next window)
 (windmove-default-keybindings) ;; Shift+direction
